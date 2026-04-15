@@ -1,0 +1,157 @@
+/* Estilo Geral */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Card do Formulário */
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 100%;
+    max-width: 400px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-top: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Inputs Estilizados */
+input {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+    outline: none;
+}
+
+/* Remove setas no Chrome, Safari, Edge e Opera */
+input.no-spinners::-webkit-outer-spin-button,
+input.no-spinners::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Remove setas no Firefox */
+input.no-spinners {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+
+/* Botão */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* cadastro*/
+/* Estilo da Página de Listagem */
+.cadastro {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;   
+    justify-content: flex-start;
+    min-height: 100vh;      
+}
+
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+.btn-voltar {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #fff;
+    background-color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.btn-voltar:hover {
+    background-color: #0056b3;
+}
+
+/* Container da Tabela com a Sombra */
+.table-wrapper {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    width: 100%;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; 
+}
+
+/* Cabeçalho da Tabela */
+th {
+    background-color: #f1f3f5;
+    color: #495057;
+    text-align: left;
+    padding: 18px;
+    border-bottom: 2px solid #dee2e6;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+/* Linhas de Dados */
+td {
+    padding: 15px 18px;
+    border-bottom: 1px solid #eee;
+    color: #333;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fcfcfc; 
+}
+
+/* Linhas com tom um pouco mais escuro ao passar o mouse */
+tbody tr:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.2s;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar</title>
+</head>
+<body class="cadastro">
+    <div class="content">
+    <div class="header-container">
+        <h1>Funcionários Cadastrados</h1>
+        <a href="{{ url_for('index') }}" class="btn-voltar">Voltar</a>
+    </div>
+
+    <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Telefone</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for funcionario in funcionarios %}
+                <tr>
+                    <td>{{ funcionario.nome }}</td>
+                    <td>{{ funcionario.idade }}</td>
+                    <td>{{ funcionario.telefone }}</td>
+                </tr>
+                {% else %}
+                <tr>
+                    <td colspan="3" class="no-data">Nenhum funcionário encontrado.</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
